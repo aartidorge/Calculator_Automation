@@ -1,0 +1,81 @@
+from selenium import webdriver
+
+driver=webdriver.Chrome("/home/pritee/Desktop/calculator_automation/chromedriver_linux64/chromedriver")
+
+def Multipliaion():
+    driver.get('https://www.calculator.net/')
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[4]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[5]/span[4]').click()
+    value = driver.find_element_by_id("sciOutPut")
+
+    print("Multiplication:"+value.text)
+
+def Division():
+    driver.get('https://www.calculator.net/')
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click()  
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[4]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[4]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[4]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[4]/span[4]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[4]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[4]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[5]/span[4]').click()
+    value = driver.find_element_by_id("sciOutPut")
+
+    print("Division:"+value.text)
+
+def Addition():
+    driver.get('https://www.calculator.net/')
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[4]').click()  
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click()  
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click() 
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[1]/span[4]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click()  
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click()  
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[5]/span[4]').click()
+    value = driver.find_element_by_id("sciOutPut")
+
+    print("Addition:"+value.text)
+    
+def Substraction():
+    driver.get('https://www.calculator.net/')
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[1]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[4]').click()  
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[4]').click()  
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[4]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[1]/span[3]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[2]/span[1]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[1]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[2]').click()
+    driver.find_element_by_xpath('//*[@id="sciout"]/tbody/tr[2]/td[2]/div/div[3]/span[3]').click()
+    value=driver.find_element_by_id('sciOutPut')
+    print("Substraction:"+value.text)
+    
+if __name__=='__main__':
+    Multipliaion()
+    Division()
+    Addition()
+    Substraction()
+    driver.close()  
